@@ -38,14 +38,14 @@ public class Q6 {
         System.out.println("enter the 2 for the power of the large number ---> ");
         int number = sc.nextInt();
         switch (number) {
-            case 1 -> {
+            case 1 :{
                 System.out.println("enter the number ---> ");
                 int n = sc.nextInt();
                 System.out.println("enter the power of the number ---> ");
                 int m = sc.nextInt();
                 System.out.println("result ---> " + fastPower(n, m));
             }
-            case 2 -> {
+            case 2 : {
                 System.out.println("enter the number ---> ");
                 long N = sc.nextLong();
                 System.out.println("enter the power of the number ---> ");
