@@ -45,7 +45,7 @@ public class q1 {
                     newArr.add(num);
                 }
             }
-            if (newArr.size()>0) System.out.println(newArr.size());
+            if (newArr.size()> 0) System.out.println(newArr.size());
             arr = newArr;
             System.out.println(newArr);
         }
