@@ -13,7 +13,8 @@ Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
 public class A3 {
     public static void main(String[] args) {
         int[] nums = {2,3,1,1,4};
-        System.out.print(canJump2(nums));
+        System.out.println("person can jump still last index : "+canJump(nums));
+        System.out.print("minium No. of jumps : "+canJump2(nums));
     }
     private static Boolean canJump(int[] nums){
         int maxReach = 0;
