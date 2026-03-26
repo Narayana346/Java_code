@@ -1,8 +1,8 @@
 package design_patten.behavioral.strategy;
 
-public class CreaditCard implements Payment{
+public class CreditCard implements Payment{
     @Override
     public void pay() {
-
+        System.out.println("Pay via CreditCard");
     }
 }
