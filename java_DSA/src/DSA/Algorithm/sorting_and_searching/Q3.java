@@ -1,5 +1,5 @@
 package DSA.Algorithm.sorting_and_searching;
-//Q --> allocate the book to read the maximum pages to
+//Q --> allocate the book to read.txt the maximum pages to
 // the n number of the student .
 // the optimising solution is O(NlogN) . and use the binary search .
 // the bruteforce solution is O(2^n)  .

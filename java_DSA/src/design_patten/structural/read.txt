@@ -1,0 +1,15 @@
+Def:-
+    -Structural Design Patterns deal with how classes and objects are composed to form larger structures.
+    They help ensure that if one part changes, the entire system doesn’t break.
+
+    -They define how objects are connected and organized.
+
+    -- types of structural design patterns
+
+         1. Adapter     – Convert one interface to another (like a charger adapter)
+         2. Bridge      – Separate abstraction & implementation
+         3. Composite   – Tree structure (part-whole)
+         4. Decorator   – Add behavior dynamically
+         5. Facade      – Simplified interface
+         6. Flyweight   – Memory optimization (shared objects)
+         7. Proxy       – Control access to object

@@ -1,16 +1,16 @@
 package design_patten.creational.singleton;
 
-public class Singleton {
+public class BasicSingleton {
     // Step 1: Create static instance
-    private static Singleton instance;
+    private static BasicSingleton instance;
 
     // Step 2: Private constructor (prevent object creation)
-    private Singleton() {}
+    private BasicSingleton() {}
 
     // Step 3: Public method to access instance (Not thread-safe & Lazy initialization)
-    public static Singleton getInstance() {
+    public static BasicSingleton getInstance() {
         if (instance == null) {
-            instance = new Singleton();
+            instance = new BasicSingleton();
         }
         return instance;
     }

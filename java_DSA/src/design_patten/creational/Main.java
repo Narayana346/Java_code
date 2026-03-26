@@ -10,7 +10,7 @@ import design_patten.creational.factory.Rectangle;
 import design_patten.creational.factory.Shape;
 import design_patten.creational.factory.ShapeFactory;
 import design_patten.creational.prototype.Prototype;
-import design_patten.creational.singleton.Singleton;
+import design_patten.creational.singleton.BasicSingleton;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
@@ -33,8 +33,8 @@ public class Main {
 
     private static void testSingleton(){
         System.out.println("--------- Testing Singleton Pattern ---------");
-        Singleton obj1 = Singleton.getInstance();
-        Singleton obj2 = Singleton.getInstance();
+        BasicSingleton obj1 = BasicSingleton.getInstance();
+        BasicSingleton obj2 = BasicSingleton.getInstance();
         System.out.println(obj1.hashCode());
         System.out.println(obj2.hashCode());
         System.out.println(obj1 == obj2); // true ( same instance)
