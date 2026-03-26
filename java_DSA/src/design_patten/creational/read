@@ -1,0 +1,13 @@
+Def:-
+    - Creational Design Patterns are design patterns that deal with object creation mechanisms.
+    They help create objects in a way that is flexible, reusable, and hides the creation logic,
+    instead of directly using new.
+
+    - They control how objects are created, making your code more maintainable and scalable.
+
+    - types of creational design patterns:
+        1. Singleton        – Only one instance
+        2. Factory Method   – Create object via method
+        3. Builder          – Step-by-step object creation
+        4. Prototype        – Clone existing object
+        5. Abstract Factory – Create families of objects
