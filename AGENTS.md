@@ -1,5 +1,7 @@
 # AGENTS.md - Codebase Guide for AI Coding Agents
 
+> 📖 Full design pattern theory with diagrams: [`docs/design-patterns.md`](docs/design-patterns.md)
+
 ## Project Overview
 
 This is a **Java learning/practice project** focused on Design Patterns and Data Structures & Algorithms (DSA). It's an IntelliJ IDEA project with modular organization, not a production system.
@@ -75,6 +77,19 @@ java -cp java_DSA/src design_patten.creational.Main
 - **Class names:** PascalCase for patterns, sometimes lowercase for practice files (e.g., `q1.java`, `Q1.java` inconsistency)
 - **Method names:** camelCase with `test` prefix for pattern demonstrations (`testSingleton`, `testFactory`)
 
+### ⚠️ Known Typos — Naming Policy
+
+These typos exist in the codebase. **Do not rename existing packages** (breaks existing class references). Apply correct spelling only when creating **new** folders/classes.
+
+| Current (keep as-is) | Correct spelling for new code |
+|----------------------|-------------------------------|
+| `adpter/` | `adapter/` |
+| `tamplate_method/` | `template_method/` |
+| `chain_of_resposibility/` | `chain_of_responsibility/` |
+| `Manger` (class) | `Manager` |
+| `ConcreateVisitor` (class) | `ConcreteVisitor` |
+| `pratice_section/` | `practice_section/` |
+
 ### Code Organization Patterns
 1. **Pattern implementations:** Each pattern has its own package with interface/abstract class + concrete implementations
 2. **Main.java structure:** Sequential test method calls with clear output separation
@@ -114,6 +129,24 @@ java -cp java_DSA/src design_patten.creational.Main
 4. Call test method from main()
 5. Follow existing separator comment style
 
+**Copy-paste template for a new pattern class:**
+```java
+package design_patten.creational.your_pattern;
+
+public class YourClass {
+    // implementation
+}
+```
+
+**Copy-paste template for a new `testXxx()` method in Main.java:**
+```java
+private static void testYourPattern() {
+    System.out.println("--------- Testing YourPattern Pattern ---------");
+    // instantiate and exercise your pattern here
+    System.out.println("--------- Testing YourPattern Pattern ---------");
+}
+```
+
 ### When Adding DSA Problems
 1. Create file in appropriate Algorithm subdirectory with PascalCase name (Q#.java or Pattern matching existing folder)
 2. Structure: package declaration → imports → class with main() → helper methods
@@ -121,11 +154,50 @@ java -cp java_DSA/src design_patten.creational.Main
 4. Input via hardcoded values or Scanner for interview problems
 5. Output via System.out.println()
 
+**Copy-paste template for a DSA problem:**
+```java
+package DSA.Algorithm.sliding_window;
+
+public class Q1 {
+    public static void main(String[] args) {
+        // hardcoded test input
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.println(solve(arr));
+    }
+
+    static int solve(int[] arr) {
+        // your solution
+        return 0;
+    }
+}
+```
+
 ### When Adding Practice Questions
 1. Match existing file naming: lowercase `q#.java` for Accenture, `Q#.java` for Array/String
 2. Use Scanner for user input patterns (interview simulation)
 3. Single solution method (e.g., `sol()`) called from main()
 4. No external dependencies
+
+**Copy-paste template for interview practice (Scanner-based):**
+```java
+package pratice_section.Accenture;
+
+import java.util.Scanner;
+
+public class q9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter input: ");
+        int n = sc.nextInt();
+        System.out.println(sol(n));
+    }
+
+    public static int sol(int n) {
+        // solution
+        return n;
+    }
+}
+```
 
 ---
 

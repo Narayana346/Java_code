@@ -16,6 +16,12 @@ import design_patten.structural.proxy.ProxyInternet;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("========================================");
+        System.out.println("   STRUCTURAL DESIGN PATTERNS DEMO");
+        System.out.println("   Patterns: Adapter | Bridge | Composite | Decorator | Facade | Flyweight | Proxy");
+        System.out.println("========================================");
+        System.out.println();
+
         testAdapter();
         System.out.println();
 
@@ -36,6 +42,10 @@ public class Main {
 
         testProxy();
         System.out.println();
+
+        System.out.println("========================================");
+        System.out.println("   All 7 Structural Patterns complete.");
+        System.out.println("========================================");
     }
 
     private static void testProxy() {

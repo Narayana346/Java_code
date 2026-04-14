@@ -34,6 +34,12 @@ import design_patten.behavioral.visitor.Visitor;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("========================================");
+        System.out.println("   BEHAVIORAL DESIGN PATTERNS DEMO");
+        System.out.println("   Patterns: Observer | Strategy | Command | Chain | Mediator | Memento | State | Template | Iterator | Visitor | Interpreter");
+        System.out.println("========================================");
+        System.out.println();
+
         testObserver();
         System.out.println();
 
@@ -66,6 +72,10 @@ public class Main {
 
         testInterpreter();
         System.out.println();
+
+        System.out.println("========================================");
+        System.out.println("   All 11 Behavioral Patterns complete.");
+        System.out.println("========================================");
     }
 
     private static void testInterpreter() {

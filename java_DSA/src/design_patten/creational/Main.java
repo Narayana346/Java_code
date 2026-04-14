@@ -14,6 +14,12 @@ import design_patten.creational.singleton.BasicSingleton;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
+        System.out.println("========================================");
+        System.out.println("   CREATIONAL DESIGN PATTERNS DEMO");
+        System.out.println("   Patterns: Singleton | Factory | Builder | Prototype | Abstract Factory");
+        System.out.println("========================================");
+        System.out.println();
+
         testSingleton();
         System.out.println();
 
@@ -29,6 +35,9 @@ public class Main {
         testAbstractFactory();
         System.out.println();
 
+        System.out.println("========================================");
+        System.out.println("   All 5 Creational Patterns complete.");
+        System.out.println("========================================");
     }
 
     private static void testSingleton(){
